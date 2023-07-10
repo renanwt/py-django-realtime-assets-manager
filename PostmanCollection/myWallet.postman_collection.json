@@ -1,0 +1,246 @@
+{
+	"info": {
+		"_postman_id": "a33b5f61-2823-4e08-b048-660eeb08ed50",
+		"name": "myWallet",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Ativos",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						""
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Patrimony",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ativo/patrimony",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"patrimony"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Registers",
+			"request": {
+				"method": "GET",
+				"header": [],
+				"url": {
+					"raw": "http://localhost:8000/ativo/register",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"register"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Ações",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"CPLE3\",\r\n    \"preço_un\": 5.90,\r\n    \"quantidade\": 500,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/classe/ações",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"classe",
+						"ações"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Fiis",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"CPLE3\",\r\n    \"preço_un\": 5.90,\r\n    \"quantidade\": 500,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/classe/ações",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"classe",
+						"ações"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Stocks",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"NVDA\",\r\n    \"preço_un\": 250,\r\n    \"quantidade\": 1,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/classe/stocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"classe",
+						"stocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Reits",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"nome\": \"NVDA\",\r\n    \"preço_un\": 600,\r\n    \"quantidade\": 1,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/stocks",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"stocks"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos/BRL",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"moeda_utilizada\": \"BRL\",\r\n    \"nome\": \"BTC\",\r\n    \"preço_un\": 28000,\r\n    \"quantidade\": 1,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/cryptos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"cryptos"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Cryptos/Cryptos",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": "{\r\n    \"moeda_utilizada\": \"BRL\",\r\n    \"preço_un_sai\": 1.00,\r\n    \"quantidade_sai\": 140000.80,\r\n    \"nome\": \"BTC\",\r\n    \"preço_un\": 28000,\r\n    \"quantidade\": 1,\r\n    \"dividendos\": false\r\n}",
+					"options": {
+						"raw": {
+							"language": "json"
+						}
+					}
+				},
+				"url": {
+					"raw": "localhost:8000/ativo/cryptos",
+					"host": [
+						"localhost"
+					],
+					"port": "8000",
+					"path": [
+						"ativo",
+						"cryptos"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
