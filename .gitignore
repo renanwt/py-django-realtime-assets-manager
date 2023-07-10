@@ -1,3 +1,15 @@
+# Ignore PyCharm project files
+.idea/
+
+# Ignore PyCharm specific files
+*.iml
+*.iws
+*.ipr
+*.pyc
+*.pyo
+*.pyd
+__pycache__/
+
 # Byte-compiled / optimized / DLL files
 __pycache__/
 *.py[cod]
